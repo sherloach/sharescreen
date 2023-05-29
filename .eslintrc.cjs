@@ -27,7 +27,15 @@ module.exports = {
     'import',
   ],
   rules: {
-    'react/react-in-jsx-scope': 0,
+    'react/react-in-jsx-scope': 'off',
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
+    'no-restricted-exports': 'off',
 
     // Typescript
     '@typescript-eslint/no-unused-vars': 'error',
