@@ -15,8 +15,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["postcss.config.js", "vite.config.ts", ".eslintrc.cjs", "src"],
+  "include": [
+    "postcss.config.js",
+    "vite.config.ts",
+    ".eslintrc.cjs",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
