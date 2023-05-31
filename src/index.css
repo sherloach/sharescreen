@@ -1,12 +1,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  background-color: #0e1320;
 }
 
 html,
@@ -43,3 +42,29 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .h1 {
+    @apply font-['Plus_Jakarta_Sans'] text-[3.5rem] font-bold leading-[1.2];
+  }
+
+  .h2 {
+    @apply font-['Plus_Jakarta_Sans'] text-5xl font-bold leading-[1.2];
+  }
+
+  .h3 {
+    @apply font-['Plus_Jakarta_Sans'] text-4xl font-bold leading-[1.2];
+  }
+
+  .h4 {
+    @apply font-['Plus_Jakarta_Sans'] text-[2rem] font-bold leading-[1.2];
+  }
+
+  .h5 {
+    @apply font-['Plus_Jakarta_Sans'] text-2xl font-bold leading-[1.2];
+  }
+
+  .h6 {
+    @apply font-['Plus_Jakarta_Sans'] text-lg font-bold leading-[1.2];
+  }
+}
