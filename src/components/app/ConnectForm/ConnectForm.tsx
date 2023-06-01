@@ -1,6 +1,6 @@
 const ConnectForm = () => {
   return (
-    <div className="h-full rounded-sm bg-[#111927] p-4 text-white">
+    <div className="h-full rounded-sm bg-[#111927] p-4">
       <div className="flex">
         <p className="h4">Your name</p>
         <button type="button" className="ml-2 text-xs">
