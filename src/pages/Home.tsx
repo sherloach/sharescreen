@@ -4,9 +4,11 @@ import { ConnectForm, LiveChat, Player, Queue } from 'components/app';
 const Home = () => {
   return (
     <Layout>
-      <Player />
-      <ConnectForm />
-      <LiveChat />
+      <div className="grid">
+        <Player />
+        <ConnectForm />
+        <LiveChat />
+      </div>
       <Queue />
     </Layout>
   );
