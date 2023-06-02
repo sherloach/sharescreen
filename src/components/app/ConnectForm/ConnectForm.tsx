@@ -2,7 +2,7 @@ const ConnectForm = () => {
   return (
     <div className="mb-3 h-[200] rounded-sm bg-[#111927] p-4">
       <div className="flex">
-        <p className="h4">Your name</p>
+        <p className="h5">Your name</p>
         <button type="button" className="ml-2 text-xs">
           Edit
         </button>
