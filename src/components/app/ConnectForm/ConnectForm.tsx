@@ -1,6 +1,6 @@
 const ConnectForm = () => {
   return (
-    <div className="h-full rounded-sm bg-[#111927] p-4">
+    <div className="mb-3 h-[200] rounded-sm bg-[#111927] p-4">
       <div className="flex">
         <p className="h4">Your name</p>
         <button type="button" className="ml-2 text-xs">
@@ -14,9 +14,9 @@ const ConnectForm = () => {
         </div>
       </div>
       <div className="flex">
-        <input className="mr-4 flex-grow border border-[#243c5a] bg-[#111927] p-2" />
+        <input className="mr-4 w-full flex-grow border border-[#243c5a] bg-[#111927] p-2" />
         <button
-          className=" rounded-none bg-[#6366f1] p-2 text-sm font-medium transition duration-200 hover:bg-[#4338ca]"
+          className="rounded-none bg-[#6366f1] p-2 text-sm font-medium transition duration-200 hover:bg-[#4338ca]"
           type="button"
         >
           Connect
