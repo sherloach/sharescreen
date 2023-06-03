@@ -6,8 +6,8 @@ interface ILayout {
 
 const Layout: React.FC<ILayout> = ({ children }) => {
   return (
-    <div className="container mx-auto h-full p-4">
-      <div className="grid h-full w-full grid-cols-1 md:grid-cols-3">
+    <div className="flex h-full items-center justify-center">
+      <div className="h-full w-full max-w-[1024px] p-5 md:max-h-[900px]">
         {children}
       </div>
     </div>

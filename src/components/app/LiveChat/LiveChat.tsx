@@ -1,6 +1,6 @@
 const LiveChat = () => {
   return (
-    <div className="flex h-[80%] flex-col rounded-sm bg-[#111927] p-4">
+    <div className="flex h-full flex-col bg-[#111927]">
       <div className="w-full border-b border-b-[#6366f1] pb-1">
         <p className="h6">Chat</p>
       </div>

@@ -1,6 +1,6 @@
 const Player = () => {
   return (
-    <div className="h-[50vh]">
+    <div className="h-[400px]">
       <p className="text-white">Player</p>
     </div>
   );
