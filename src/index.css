@@ -72,4 +72,8 @@ code {
   .h6 {
     @apply font-['Plus_Jakarta_Sans'] text-lg font-bold leading-[1.2];
   }
+
+  .border-be-ytb-item {
+    border-block-end: 1px solid rgba(253, 253, 253, 0.12);
+  }
 }
