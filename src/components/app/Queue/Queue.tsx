@@ -1,3 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import { CiPlay1 } from 'react-icons/ci';
+import { MdDeleteOutline } from 'react-icons/md';
+
 const Queue = () => {
   return (
     <div className="min-h-[300px] flex-grow bg-[#111927]">
@@ -35,8 +39,12 @@ const Queue = () => {
                 </span>
               </div>
               <div className="mr-3 flex flex-row gap-1">
-                <button type="button">Delete</button>
-                <button type="button">Play</button>
+                <button type="button">
+                  <MdDeleteOutline />
+                </button>
+                <button type="button">
+                  <CiPlay1 />
+                </button>
               </div>
             </li>
             <li className="flex items-center justify-between py-3">
@@ -55,8 +63,12 @@ const Queue = () => {
                 </span>
               </div>
               <div className="mr-3 flex flex-row gap-1">
-                <button type="button">Delete</button>
-                <button type="button">Play</button>
+                <button type="button">
+                  <MdDeleteOutline />
+                </button>
+                <button type="button">
+                  <CiPlay1 />
+                </button>
               </div>
             </li>
           </ul>
