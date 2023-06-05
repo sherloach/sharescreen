@@ -1,5 +1,9 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { MdDeleteOutline } from 'react-icons/md';
+import QueueItem from './QueueItem';
+
+const thumbnail =
+  'https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn';
+const title =
+  'PHỎNG VẤN MAN UNITED - MAN CITY: TEN HAG QUYẾT TÂM VÔ ĐỊCH, PEP GUARDIOLA THẬN TRỌNG PHỎNG VẤN MAN UNITED - MAN CITY: TEN';
 
 const Queue = () => {
   return (
@@ -21,27 +25,7 @@ const Queue = () => {
       </div>
       <div className="h-full max-h-[390px] overflow-y-auto">
         <ul>
-          <li className="border-be-ytb-item flex cursor-pointer items-center justify-between py-3 last:border-none">
-            <img
-              className="mx-3 h-[48px]"
-              src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn"
-              alt="Thumbnail"
-            />
-            <div className="flex-1">
-              <div>
-                PHỎNG VẤN MAN UNITED - MAN CITY: TEN HAG QUYẾT TÂM VÔ ĐỊCH, PEP
-                GUARDIOLA THẬN TRỌNG PHỎNG VẤN MAN UNITED - MAN CITY: TEN
-              </div>
-              <span className="rounded-sm border border-[rgba(157,164,222,0.43)] px-1 text-xs">
-                2:30
-              </span>
-            </div>
-            <div className="mr-3 flex flex-row gap-1">
-              <button type="button">
-                <MdDeleteOutline />
-              </button>
-            </div>
-          </li>
+          <QueueItem title={title} time="2:20" thumbnail={thumbnail} />
         </ul>
       </div>
     </div>
