@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { CiPlay1 } from 'react-icons/ci';
 import { MdDeleteOutline } from 'react-icons/md';
 
 const Queue = () => {
@@ -21,58 +20,29 @@ const Queue = () => {
         </div>
       </div>
       <div className="h-full max-h-[390px] overflow-y-auto">
-        <div>
-          <ul>
-            <li className="border-be-ytb-item flex items-center justify-between py-3">
-              <img
-                className="mx-3 h-[48px]"
-                src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn"
-                alt="Thumbnail"
-              />
-              <div className="flex-1">
-                <div>
-                  PHỎNG VẤN MAN UNITED - MAN CITY: TEN HAG QUYẾT TÂM VÔ ĐỊCH,
-                  PEP GUARDIOLA THẬN TRỌNG PHỎNG VẤN MAN UNITED - MAN CITY: TEN
-                </div>
-                <span className="rounded-sm border border-[rgba(157,164,222,0.43)] px-1 text-xs">
-                  2:30
-                </span>
+        <ul>
+          <li className="border-be-ytb-item flex cursor-pointer items-center justify-between py-3 last:border-none">
+            <img
+              className="mx-3 h-[48px]"
+              src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn"
+              alt="Thumbnail"
+            />
+            <div className="flex-1">
+              <div>
+                PHỎNG VẤN MAN UNITED - MAN CITY: TEN HAG QUYẾT TÂM VÔ ĐỊCH, PEP
+                GUARDIOLA THẬN TRỌNG PHỎNG VẤN MAN UNITED - MAN CITY: TEN
               </div>
-              <div className="mr-3 flex flex-row gap-1">
-                <button type="button">
-                  <MdDeleteOutline />
-                </button>
-                <button type="button">
-                  <CiPlay1 />
-                </button>
-              </div>
-            </li>
-            <li className="flex items-center justify-between py-3">
-              <img
-                className="mx-3 h-[48px]"
-                src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn"
-                alt="Thumbnail"
-              />
-              <div className="flex-1">
-                <div>
-                  PHỎNG VẤN MAN UNITED - MAN CITY: TEN HAG QUYẾT TÂM VÔ ĐỊCH,
-                  PEP GUARDIOLA THẬN TRỌNG
-                </div>
-                <span className="rounded-sm border border-[rgba(157,164,222,0.43)] px-1 text-xs">
-                  2:30
-                </span>
-              </div>
-              <div className="mr-3 flex flex-row gap-1">
-                <button type="button">
-                  <MdDeleteOutline />
-                </button>
-                <button type="button">
-                  <CiPlay1 />
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
+              <span className="rounded-sm border border-[rgba(157,164,222,0.43)] px-1 text-xs">
+                2:30
+              </span>
+            </div>
+            <div className="mr-3 flex flex-row gap-1">
+              <button type="button">
+                <MdDeleteOutline />
+              </button>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   );
