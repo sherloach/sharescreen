@@ -48,5 +48,6 @@ module.exports = {
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
     'import/extensions': 'off',
+    'no-param-reassign': 'off',
   },
 };

@@ -2,6 +2,8 @@ import Home from 'pages/Home';
 import NotFound from 'pages/NotFound';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import { Peer } from './components/app/Peer';
+
 export const App = () => {
   return (
     <Routes>
@@ -14,6 +16,7 @@ export const App = () => {
 export const WrappedApp = () => {
   return (
     <BrowserRouter>
+      <Peer />
       <App />
     </BrowserRouter>
   );
