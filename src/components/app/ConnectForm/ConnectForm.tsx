@@ -6,7 +6,7 @@ const ConnectForm = () => {
   const [peerId, setPeerId] = useState('');
 
   const handleConnect = () => {
-    console.log(peerId);
+    // console.log(peerId);
     peerServices.connect(peerId);
   };
 
