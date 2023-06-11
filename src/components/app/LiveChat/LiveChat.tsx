@@ -17,6 +17,12 @@ const LiveChat = () => {
     setMessage(value);
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      send();
+    }
+  };
+
   console.log({ messages });
 
   return (
@@ -39,6 +45,7 @@ const LiveChat = () => {
         <input
           value={message}
           onChange={handleChange}
+          onKeyDown={handleKeyDown}
           className="mr-2 w-full flex-grow border border-[#243c5a] bg-[#111927] p-2"
         />
         <button
